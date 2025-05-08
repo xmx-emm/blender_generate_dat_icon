@@ -294,7 +294,7 @@ def write_mesh_to_py(fh, ob, ob_children):
         for color in tri_color:
             fw(bytes(color))
             
-file_path = os.path.dirname( os.path.dirname( __file__))
+file_path = os.path.join(os.path.dirname( os.path.dirname( __file__)), "out")
 print(file_path)
 
 def create_argparse():
